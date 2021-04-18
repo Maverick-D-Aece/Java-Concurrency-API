@@ -25,6 +25,8 @@ public class ThreadsStudy {
             System.err.println(e.getMessage());
         }
 
+        // setting thread priority
+        Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
         System.out.println("\nMy main thread: " + Thread.currentThread().getName());
     }
 }
